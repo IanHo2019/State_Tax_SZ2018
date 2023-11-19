@@ -51,6 +51,6 @@ Introducing a quadratic term to the basic framework gives us
 $$R_{st} = \beta_0 \tau_{st} + \delta_0 \tau_{st}^2 + \alpha_s + \gamma_t + u_{st}$$
 By the first-order condition, we can obtain the revenue-maximizing tax rate
 $$\tau^* = \frac{\beta_0}{-2\delta_0} \quad \text{if}\ \delta_0 < 0$$
-The authors used this equation and its updated version (allowing the linear and quadratic effects of $\tau$ to depend on base index[^1]) to estimate the revenue-maximizing tax rate. Interestingly, they found that the minimum revenue-maximizing tax rate is even greater than any coporate tax rate observed in their data.
+The authors used this equation and its updated version (allowing the linear and quadratic effects of $\tau$ to depend on base index[^1]) to estimate the revenue-maximizing tax rate. Interestingly, they found that the minimum revenue-maximizing tax rate is even greater than any corporate tax rate observed in their data.
 
 [^1]: Base index is an authors-defined index of the breadth of the tax base. See Section 4.2.1 and [Table5.do] for computation details.
