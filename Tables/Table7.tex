@@ -1,0 +1,43 @@
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\adjustbox{max width=\textwidth}{
+\begin{tabular}{l*{5}{l}}
+\hline
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         \\
+\hline
+\multicolumn{6}{l}{\textit{Panel A. State corporate tax revenue-to-GDP ratio}} \\
+State Corporate Tax Rate $\tau$ &        3.95\sym{*}  &        0.49         &        2.74         &        3.10         &        3.46         \\
+                    &      (1.87)         &      (4.88)         &      (2.16)         &      (3.94)         &      (3.69)         \\
+State Corporate Tax Rate$^2$ $(\tau)^2$ &        2.53         &       14.12         &        9.99         &       -5.06         &       -6.65         \\
+                    &     (23.00)         &     (31.91)         &     (24.56)         &     (25.00)         &     (24.23)         \\
+Base Index $\times$ 100 &                     &                     &        5.33         &        5.32\sym{**} &       11.69         \\
+                    &                     &                     &      (3.21)         &      (1.87)         &      (8.00)         \\
+State Corporate Tax Rate $\tau$ $\times$ Base Index&                     &                     &                     &                     &       -1.78         \\
+                    &                     &                     &                     &                     &      (1.72)         \\
+State Corporate Tax Rate$^2$ $(\tau)^2$ $\times$ Base Index&                     &                     &                     &                     &       11.27         \\
+                    &                     &                     &                     &                     &     (10.28)         \\
+
+Observations        &       1,550         &       1,550         &       1,550         &       1,550         &       1,550         \\
+Year Fixed Effects  &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+State Fixed Effects &                     &         Yes         &                     &         Yes         &         Yes         \\
+Revenue-Maximizing Rate&                     &                     &                     &       0.307         &       0.260         \\
+
+\addlinespace[1em]
+\multicolumn{6}{l}{\textit{Panel B. Total tax revenue-to-GDP ratio}} \\
+
+State Corporate Tax Rate $\tau$ &        6.43         &       25.97         &        6.15         &       20.15         &       29.92         \\
+                    &     (13.28)         &     (18.53)         &     (13.04)         &     (18.76)         &     (15.81)         \\
+State Corporate Tax Rate$^2$ ($\tau^2$) &       53.06         &     -113.11         &       56.89         &      -98.81         &     -156.19         \\
+                    &    (112.32)         &    (130.34)         &    (109.05)         &    (129.43)         &    (106.59)         \\
+Base Index $\times$ 100 &                     &                     &       10.06         &       22.89\sym{*}  &      -15.52         \\
+                    &                     &                     &     (12.19)         &      (9.15)         &     (25.18)         \\
+State Corporate Tax Rate $\tau$ $\times$ Base Index&                     &                     &                     &                     &        8.28         \\
+                    &                     &                     &                     &                     &      (7.75)         \\
+State Corporate Tax Rate$^2$ ($\tau^2$) $\times$ Base Index&                     &                     &                     &                     &      -38.58         \\
+                    &                     &                     &                     &                     &     (53.11)         \\
+
+Observations        &       1,550         &       1,550         &       1,550         &       1,550         &       1,550         \\
+Year Fixed Effects  &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+State Fixed Effects &                     &         Yes         &                     &         Yes         &         Yes         \\
+Revenue-Maximizing Rate&                     &                     &                     &       0.102         &       0.096         \\
+\hline
+\end{tabular}}
