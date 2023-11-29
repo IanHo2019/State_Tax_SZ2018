@@ -29,20 +29,22 @@ where
 * $D_{st}^k$ is an indicator for state $s$ having changed the state tax rate $k$ periods in the past;
 * $\alpha_s$ is state fixed effect, and $\gamma_t$ is time fixed effect.
 
-The authors addressed imbalance issues by binning periods greater than 5 or less than -4. To address serial correlation in $\varepsilon_{st}$, all standard errors are clustered at state level. See [Figure7.do] for coding details.
+The authors addressed imbalance issues by binning periods greater than 5 or less than -4. To address serial correlation in $\varepsilon_{st}$, all standard errors are clustered at state level. See [Figure7.do](https://github.com/IanHo2019/State_Tax_SZ2018/blob/main/Figure7_Event_Study.do) for coding details.
 
 **Event study results:**
 * Corporate tax decreases that exceed 0.5 pp cuts in the rate tend to reduce state corporate tax revenue as a share of state GDP by roughly 6 pp cumulatively over a 5-year period. 
 * Controlling for tax base rules doesn't strongly affect the estimated effects.
 
+<img src="./Figures/Figure7.svg" title="Event Analysis: Impacts on State Corporate Tax Revenue and GDP" alt="Event Analysis: Impacts on State Corporate Tax Revenue and GDP" style="width:100%"/>
+
 ## Regression Estimation and Heterogeneous Effects
 To increase statistical precision, the authors run a new regression:
 $$R_{st} = \alpha_s + \phi_t + \gamma \tau_{st} + \boldsymbol{\rm X}_ {st}' \boldsymbol{\Psi}_ {st}^{BASE} + u_{st}$$
-where $\tau_{st}$ denotes the state corporate tax rates, and $\boldsymbol{\rm X}_{st}$ is a vector of tax base controls. This model derives from a first-order approximation of the state corporate tax revenue function around $(\tau^\*,X^\*)$. See footnote 16 in the paper for information, and see [Table5.do] for regression coding.
+where $\tau_{st}$ denotes the state corporate tax rates, and $\boldsymbol{\rm X}_{st}$ is a vector of tax base controls. This model derives from a first-order approximation of the state corporate tax revenue function around $(\tau^\*,X^\*)$. See footnote 16 in the paper for information, and see [Table5.do](https://github.com/IanHo2019/State_Tax_SZ2018/blob/main/Figure5_Var_Decomp.do) for regression coding.
 
 Considering that changes in state corporate tax rates may have different effects on tax revenue and economic activities depending on the breadth of the tax base, then the authors expanded the model above by including interaction terms between the tax rate and the tax base controls:
 $$R_{st} = \alpha_s + \gamma_t + \beta_0 \tau_{st} + \sum_{j=1}^{15} \beta_j \tau_{st} \times \tilde{\chi}_ {st}^{j} + \boldsymbol{\rm X}_ {st}^{'} \boldsymbol{\rm \Psi}_ {st}^{BASE} + u_{st}$$
-where $\tilde{\chi}^{j}$ is the standardized base rules, which facilitate the interpretation of $\beta_0$ as the mean effect of state corporate tax rates ($\tau$). See [Table6.do] for coding details.
+where $\tilde{\chi}^{j}$ is the standardized base rules, which facilitate the interpretation of $\beta_0$ as the mean effect of state corporate tax rates ($\tau$). See [Table6.do](https://github.com/IanHo2019/State_Tax_SZ2018/blob/main/Figure6_Var_Decomp_over_Time.do) for coding details.
 
 Including those interaction terms led to a much higher estimated effect of tax rate on the revenue-to-GDP ratio, highly suggesting the former OLS regression returned a biased estimate.
 
